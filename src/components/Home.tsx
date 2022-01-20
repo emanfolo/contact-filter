@@ -11,12 +11,14 @@ const Home = () => {
   // const [talentType, setTalentType] = useState("")
 
   return <>
-    <div className="topSection">
+  <div className="homeLayout">
+    <div className="leftSection">
       <SearchBar filterParams={filterParams} setFilterParams={setFilterParams}/>
     </div>
-    <div className="bottomSection">
+    <div className="rightSection">
       <TalentContainer filterParams={filterParams}/>
     </div>
+  </div>
   </>
 }
 

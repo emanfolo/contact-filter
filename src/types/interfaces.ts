@@ -14,3 +14,7 @@ export interface TalentContainerProps {
   // talentType: string
   // setTalentType: Function
 }
+
+export interface TalentCardProps {
+  talent: Talent
+}

@@ -2,19 +2,20 @@ import { SearchBarProps } from "../types/interfaces"
 
 const SearchBar = (props: SearchBarProps) => {
   const { filterParams, setFilterParams } = props
-  
+
   return (<>
-  <div className="searchBar">
+    <div> Location Filter</div>
+     <div className="searchBar">
         <input
           type="text"
-          placeholder="Search Flitter"
+          placeholder="Enter a location..."
           onChange={(e) => {
             setFilterParams(e.target.value);
           }}
-          // onKeyPress={(e) => {
-          //   handleKeyPress(e);
-          // }}
         />
+      </div>
+      <div className="talentPicker">
+        Select a field 
       </div>
   
   </>)
