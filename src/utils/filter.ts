@@ -8,7 +8,7 @@ const jsonFilter = (json: any[], filterParam: string): Talent[] => {
 
   // Function to ensure to exclude edge cases with incomplete or malformed data
   // I have ensured that a string is need for location and name as those are the two required outputs
-  const hasCorrectFormat = (object: any): Boolean => {
+  const hasCorrectFormat = (object: any): object is Talent => {
     return typeof object.location == "string" && typeof object.name == "string";
   };
 
