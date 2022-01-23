@@ -108,12 +108,5 @@
 .noResults {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   margin-top: 15%;
-}
-
-.talentPicker > div {
-  display: flex;
-  flex-direction: column;
-  gap: 2vh;
 }
