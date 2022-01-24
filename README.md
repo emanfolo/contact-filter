@@ -1,4 +1,4 @@
-### Contact Tech Test
+### Tech Test
 
 Both the function and its test suite are saved in src/utils
 
