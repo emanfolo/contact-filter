@@ -1,9 +1,10 @@
 import { Talent } from "../types/interfaces";
 
-// Create a method to deal with cases where there is more key value pairs than is need
+// Function takes an array of indiscriminate objects from a JSON file 
 
 const jsonFilter = (json: any[], filterParam: string): Talent[] => {
-  // Empty array to store all talent objects that include the substring
+
+  // Empty array is declared to store all talent objects that include the substring
   const filteredResults: Talent[] = [];
 
   // Function to ensure to exclude edge cases with incomplete or malformed data
@@ -17,7 +18,7 @@ const jsonFilter = (json: any[], filterParam: string): Talent[] => {
 
   // applyFilter function to store all talent objects whose location includes the provided substring
   const applyFilter = (talent: Talent) => {
-    if (talent.location && regex.test(talent.location)) {
+    if (regex.test(talent.location)) {
       filteredResults.push(talent);
     }
   };
